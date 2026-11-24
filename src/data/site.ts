@@ -44,7 +44,7 @@ export const site = {
   greeting: "Hello, I'm Devansh.",
   headline: "Building Ideas Into AI-Powered Products.",
   intro:
-    "I'm an AI product builder with a commerce background, focused on turning everyday problems into practical, AI-powered products. Right now I'm building HelpPilot AI — a multilingual customer support SaaS for small Indian e-commerce businesses.",
+    "I'm an AI product builder with a commerce background, focused on turning everyday problems into practical, AI-powered products. I rebuilt HelpPilot AI 2.0, an AI support copilot that drafts replies from connected help-centre content, cites its sources, and hands uncertain or sensitive conversations to a teammate.",
   /**
    * Contact details — email opens the default mail client (mailto:),
    * LinkedIn and GitHub open in a new tab.
@@ -80,13 +80,13 @@ export const aboutHighlights: string[] = [
 export const projects: Project[] = [
   {
     id: "helppilot-ai",
-    name: "HelpPilot AI",
-    summary: "Multilingual AI customer support SaaS for small Indian e-commerce businesses.",
+    name: "HelpPilot AI 2.0",
+    summary: "An AI support copilot grounded in a team’s own help-centre content and documents.",
     description:
-      "A support product for small Indian e-commerce sellers who handle customer queries in multiple languages across limited staff. It is built around the idea that reliable multilingual support should be affordable for teams of one or two people.",
-    status: "Live Website",
-    website: "https://helppilotai.vercel.app/",
-    focus: ["Multilingual support", "Customer support", "SaaS for small sellers"],
+      "Rebuilt as a shared support workspace where an AI assistant drafts answers from connected knowledge, cites the source behind each reply, and escalates uncertain or sensitive conversations to a teammate. The early-access experience includes workspaces, a knowledge library, a shared inbox and an embeddable support widget.",
+    status: "Early Access",
+    website: "https://helppilot-ai-2-hp2launch.vercel.app/",
+    focus: ["Grounded AI replies", "Source citations", "Human handoff", "Shared support inbox"],
     icon: "support",
     accent: "from-brand-purple to-brand-blue",
   },
@@ -178,8 +178,8 @@ export const journey: JourneyStep[] = [
   },
   {
     stage: "05",
-    title: "Now — HelpPilot AI",
+    title: "Rebuilding and shipping HelpPilot AI 2.0",
     description:
-      "Currently developing HelpPilot AI, a multilingual AI customer support SaaS for small Indian e-commerce businesses. The next step: growing into an AI Product Manager role.",
+      "Rebuilt HelpPilot as an AI support copilot focused on grounded answers, source citations and human handoffs. The product is now available in early access, with continued work focused on reliability and product readiness.",
   },
 ];
