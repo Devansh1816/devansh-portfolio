@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import type { ReactNode } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import { site } from "@/data/site";
 import "./globals.css";
@@ -17,7 +18,7 @@ const geistMono = Geist_Mono({
 
 const title = `${site.name} — AI Product Builder`;
 const description =
-  "Portfolio of Devansh Tripathi, an AI product builder and aspiring AI product manager creating practical, AI-powered products such as HelpPilot AI, GoYa AI and the AI Video Creator Kit.";
+  "Portfolio of Devansh Tripathi, an AI product builder and aspiring AI product manager creating practical, AI-powered products including HelpPilot AI 2.0, GoYa AI and the AI Video Creator Kit.";
 
 export const metadata: Metadata = {
   title: {
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     "AI Product Builder",
     "AI Product Manager",
     "AI portfolio",
-    "HelpPilot AI",
+    "HelpPilot AI 2.0",
     "GoYa AI",
     "Prompt Engineering",
     "SaaS Development",
@@ -63,7 +64,7 @@ export const viewport: Viewport = {
   colorScheme: "dark",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
